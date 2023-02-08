@@ -15,8 +15,8 @@
 <br>
 
 <p align="center">
-  <img alt="Página inicial do projeto" src=".github/preview.PNG" height="500px">
-  <img alt="Página inicial do projeto" src=".github/preview2.PNG" height="500px">
+  <img alt="Página inicial do projeto" src=".github/preview.png" height="500px">
+  <img alt="Página inicial do projeto" src=".github/preview2.png" height="500px">
 </p>
 <br><br>
 
