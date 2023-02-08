@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.off,
+.password {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+header {
+  width: 100vw;
+  text-align: center;
+  margin-top: 30px;
+}
+
+header h1 {
+  color: #808084;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+header img {
+  width: 50px;
+}
+
+/* primeira página */
+
+#intial-page {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 100px auto 180px auto;
+  padding: 30px 0 20px 0;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#intial-page label {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#intial-page input {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 180px;
+  height: 24px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  margin: 20px 0;
+  padding-left: 6px;
+}
+
+#intial-page button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#intial-page button img {
+  width: 35px;
+}
+
+/* segunda página */
+
+#call-page {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 45px auto 10px auto;
+  padding: 10px 0;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#call-page h2 {
+  font-family: "Merienda", cursive;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #141318;
+}
+
+#call-page h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hello h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.hello h4 strong {
+  font-family: "Merienda", cursive;
+}
+
+#call-page .description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 18px;
+  text-align: justify;
+}
+
+#color {
+  margin: 10px 0;
+  font-family: "Merienda", cursive;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.preto {
+  color: black;
+}
+
+.vermelho {
+  color: red;
+}
+
+.azul {
+  color: blue;
+}
+
+.amarelo {
+  color: #FFBE03;
+}
+
+.verde {
+  color: green;
+}
+
+.spotify {
+  padding: 10px 40px 5px 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.spotify a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dance {
+  height: 130px;
+}
+
+/* footer */
+
+footer {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+footer img {
+  width: 25px;
+}
+
+/* animation */
+
+header {
+  animation: fromTop 0.7s 0.2s backwards;
+}
+
+#intial-page {
+  animation: fromBottom 0.7s 0.2s backwards;
+}
+
+#call-page {
+  animation: fromLeft 0.7s 0.2s backwards;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); /* para que ele venha de cima para baixo */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* para que ele venha de baixo para cima */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
