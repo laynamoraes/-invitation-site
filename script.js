@@ -109,6 +109,8 @@ const data = [
   { id: 34, name: "Giovanna", senha: "giovanna", cor: "AMARELO" },
   { id: 35, name: "Thais", senha: "thaisalves", cor: "VERDE" },
   { id: 36, name: "Thisciane", senha: "thiscianealves", cor: "AZUL" },
+  { id: 36, name: "Hanelle", senha: "hanellefernandes", cor: "VERMELHO" },
+  { id: 36, name: "Matheus", senha: "matheusrodrigues", cor: "AMARELO" },
 ]
 
 // converter objeto para JSON
